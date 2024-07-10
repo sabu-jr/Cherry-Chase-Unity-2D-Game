@@ -7,7 +7,7 @@ public class BuildScript
 {
     static void WindowsBuild()
     {
-        static string[] scenes = FindEnabledEditorScenes();
+        string[] scenes = FindEnabledEditorScenes();
 
 
         BuildPipeline.BuildPlayer(scenes, "../WindowsBuild/CherryChase.exe", BuildTarget.StandaloneWindows, BuildOptions.None );
