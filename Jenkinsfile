@@ -5,8 +5,8 @@ pipeline {
         PROJECT_PATH = "${WORKSPACE}"
         BUILD_PATH = "${WORKSPACE}/WindowsBuild"
         BUILD_TARGET = 'StandaloneWindows'
-         SLACK_CHANNEL = '#jenkins-notifications'  // Update this to your Slack channel
-        SLACK_CREDENTIAL_ID = 'slackWebhook'  // Update this to your Slack credential ID
+         SLACK_CHANNEL = '#jenkins-notifications'
+        SLACK_CREDENTIAL_ID = 'slackWebhook'
     }
     stages {
         stage('Notify Start') {
